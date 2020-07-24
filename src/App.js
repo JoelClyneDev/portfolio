@@ -1,7 +1,8 @@
 import React, {useRef} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import profilePicture from './Red.svg.png';
+import profilePicture from './ProfessionalPfpEditedBackgroundCircleVersion.png';
+import circuitBgImage from './coolerTechWallpaperOpacity4.png'
 import './strings/websiteText';
 import WEBSITE_TEXT from './strings/websiteText';
 
@@ -15,6 +16,7 @@ function App() {
 const scrollToProjects = (ref) => window.scrollTo(0, ref.current.offsetTop);
 const projectRef = useRef(null)
 const executeScroll = () => scrollToProjects(projectRef)
+const bgURL = './coolerTechWallpaperOpacity2.png';
 
     
 
@@ -23,6 +25,7 @@ const executeScroll = () => scrollToProjects(projectRef)
     const profileAreaHeightForTranslation = 204 / 2;
     const textInput = WEBSITE_TEXT;
     console.log(textInput.NAME)
+    console.log(windowHeight)
 
 
     return ( 
@@ -30,29 +33,36 @@ const executeScroll = () => scrollToProjects(projectRef)
         height: 'auto',
         backgroundCOlor: '#1F2833',
         margin: '0%',
-        overflow: 'hidden'
+        overflow: 'hidden',
     }}>
+        
         <div style={{
-            display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: (windowHeight / 2), transform: 'translateY(-308.5px)', paddingBottom: (windowHeight / 2)
+             display: 'grid', justifyContent: 'center', alignItems: 'center', paddingTop: (windowHeight / 2), transform: 'translateY(-173px)', paddingBottom: (windowHeight / 2), backgroundImage: `url(${circuitBgImage})`, maxHeight: "1200px", backgroundSize: "cover", backgroundRepeat: "no-repeat"
         }}>
-            <div>
                 <div className = "ProfileArea" style={{
-                    color: '#66FCF1', maxWidth: '50vw'}}>
-                    <div className = "Introduction" >
-                <h1 style={{
-                    fontFamily: 'Disket-Mono', fontSize: "60px"}}> 
-                    {WEBSITE_TEXT.NAME}</h1> 
-                <p style={{fontFamily: 'Kernel-Panic', fontSize: "30px"}}> {WEBSITE_TEXT.ABOUT_ME}</p> 
-                <button onClick={executeScroll} style={{
-                    backgroundColor: "transparent", color: "#66FCF1", border: "2px solid #66FCF1"
-                }}>
-                    {WEBSITE_TEXT.PROJECT_BUTTON}</button>{' '}
-                    </div>
-                    <div>
-                    <img className = "picture" src={profilePicture}></img>
-                    </div> 
+                    color: '#66FCF1', maxWidth: '50vw', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        
+                    <div className = "Introduction">
+                    <h1 style={{
+                        fontFamily: 'Disket-Mono', fontSize: "60px"}}> 
+                        {WEBSITE_TEXT.NAME}</h1> 
+                    <p style={{fontFamily: 'Kernel-Panic', fontSize: "30px", marginBottom: "10px", color: "#C5C6C7"}}> {WEBSITE_TEXT.ABOUT_ME}</p> 
+                
+                        </div>
+                        <div>
+                        <img className = "picture" src={profilePicture}></img>
+                        </div> 
+                    
                 </div>
-            </div>
+                <div style={{
+                     display: 'grid', alignItems: 'center', justifyContent: 'center'
+
+                }}>
+                <button onClick={executeScroll} style={{
+                    backgroundColor: "transparent", color: "#66FCF1", border: "2px solid #66FCF1", fontSize: "20px", fontFamily: "Disket-Mono", maxWidth: "190px"
+                }}>
+                    {WEBSITE_TEXT.PROJECT_BUTTON}</button>{''}
+        </div>
         </div>
         <div ref={projectRef}  style={{
             color: '#C5C6C7', marginLeft: '10vh'

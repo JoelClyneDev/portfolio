@@ -38,14 +38,25 @@
 }
 
 .picture {
-    max-width: 370.317px;
-    max-height: 370.317px;
-    padding-top: 70px;
+    max-width: 300px;
+    max-height: 300px;
+    padding-top: 39px;
 }
 
 .ProfileArea {
     display: inline-flex;
     border-bottom: 3px solid #000000;
+}
+
+.ProfileArea::before {
+    background-image: url("./coolerTechWallpaperOpacity.png");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
 }
 
 @font-face {

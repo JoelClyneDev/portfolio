@@ -1,0 +1,5 @@
+#0B0C10 - blackish
+#1F2833 - light blackish
+#C5C6C7 - light gray
+#66FCF1 - neon blue
+#45A29E - dark neon blue

@@ -59,6 +59,23 @@
     opacity: 0.75;
 }
 
+.projectDiv {
+    font-Family: "Honor";
+    font-Size: "55px";
+    color: '#45A29E';
+}
+
+.projectDiv .projectHeader {
+    margin: '10px';
+}
+
+.projectDiv .bodyText {
+    font-Family: 'Kernel-Panic';
+    font-Size: "60px";
+    font-style: normal;
+    color: "#C5C6C7";
+}
+
 @font-face {
     font-family: 'Mattone';
     font-style: normal;
@@ -80,6 +97,11 @@
 @font-face {
     font-family: 'Kernel-Panic';
     src: url('Fonts/KernelPanicNbp-LyG3.ttf')
+}
+
+@font-face {
+    font-family: 'Honor';
+    src: url('Fonts/HonorMedium-GpaD.ttf')
 }
 
 

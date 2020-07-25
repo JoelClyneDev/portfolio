@@ -66,32 +66,32 @@ const bgURL = './coolerTechWallpaperOpacity2.png';
         </div>
         </div>
         <div ref={projectRef}  style={{
-            color: '#C5C6C7', paddingLeft: '10vh', overflow: 'hidden'
+            color: '#C5C6C7', paddingLeft: '10vh', overflow: 'hidden', maxWidth: '90vw'
         }}>
-            <h1>Projects</h1>
-            <div>
-            <h2>{PROJECT_1_TEXT.TITLE}</h2>
-            <h3>{PROJECT_1_TEXT.TECH_USED}</h3>
-            <ul style={{listStyleType: "none"}}>
+            <h1 style={{fontFamily: "Disket-Mono", fontSize: "60px", color: '#66FCF1', marginBottom: '15px', paddingBottom: '15px', borderBottom: "2px solid #66FCF1"}}>Projects</h1>
+            <div className = "projectDiv" style={{fontSize: '35px', color: '#45A29E', borderBottom: "2px solid #66FCF1"}}>
+            <h2 style={{marginTop: '0px', marginBottom: '10px'}}>{PROJECT_1_TEXT.TITLE}</h2>
+            <h3 style={{marginTop: '10px', marginBottom: '10px'}}>{PROJECT_1_TEXT.TECH_USED}</h3>
+            <ul className = "bodyText" style={{fontSize: '30px', color: "#C5C6C7",marginBottom: '10px', marginTop: '10px'}}>
                     <li>{PROJECT_1_TEXT.BULLET_POINT_1}</li>
                     <li>{PROJECT_1_TEXT.BULLET_POINT_2} </li>
                     <li>{PROJECT_1_TEXT.BULLET_POINT_3}</li>
                     <li>{PROJECT_1_TEXT.BULLET_POINT_4}</li>
               </ul>
             </div>
-            <div>
-    <h2>{PROJECT_2_TEXT.TITLE}</h2>
-    <h3>{PROJECT_2_TEXT.TECH_USED}</h3>
-    <ul style={{listStyleType: "none"}}>
+            <div className = "projectDiv" style={{fontSize: '35px', color: '#45A29E', borderBottom: "2px solid #66FCF1"}}>
+    <h2 style={{marginTop: '30px', marginBottom: '10px'}}>{PROJECT_2_TEXT.TITLE}</h2>
+    <h3 style={{marginTop: '10px', marginBottom: '10px'}}>{PROJECT_2_TEXT.TECH_USED}</h3>
+    <ul className = "bodyText" style={{fontSize: '30px', color: "#C5C6C7"}}>
             <li>{PROJECT_2_TEXT.BULLET_POINT_1}</li>
             <li>{PROJECT_2_TEXT.BULLET_POINT_2} </li>
             <li>{PROJECT_2_TEXT.BULLET_POINT_3}</li>
         </ul>
     </div>
-    <div>
-    <h2>{PROJECT_3_TEXT.TITLE}</h2>
-    <h3>{PROJECT_3_TEXT.TECH_USED}</h3>
-    <ul style={{listStyleType: "none"}}>
+    <div className = "projectDiv" style={{fontSize: '35px', color: '#45A29E'}}>
+    <h2 style={{marginTop: '30px', marginBottom: '10px'}}>{PROJECT_3_TEXT.TITLE}</h2>
+    <h3 style={{marginTop: '10px', marginBottom: '10px'}}>{PROJECT_3_TEXT.TECH_USED}</h3>
+    <ul className = "bodyText" style={{fontSize: '30px', color: "#C5C6C7"}}>
             <li>{PROJECT_3_TEXT.BULLET_POINT_1}</li>
             <li>{PROJECT_3_TEXT.BULLET_POINT_2} </li>
             <li>{PROJECT_3_TEXT.BULLET_POINT_3}</li>

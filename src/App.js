@@ -2,9 +2,11 @@ import React, {useRef} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import profilePicture from './ProfessionalPfpEditedBackgroundCircleVersion.png';
-import circuitBgImage from './coolerTechWallpaperOpacity4.png'
+import circuitBgImage from './coolerTechWallpaperOpacityReverseBlack.png'
 import './strings/websiteText';
-import WEBSITE_TEXT from './strings/websiteText';
+import { PROJECT_1_TEXT, PROJECT_2_TEXT, PROJECT_3_TEXT, WEBSITE_TEXT } from './strings/websiteText';
+import upsideDownBgImage from './coolerTechWallpaperOpacityUpsideDown.png'
+
 
 
 
@@ -23,8 +25,6 @@ const bgURL = './coolerTechWallpaperOpacity2.png';
     const windowHeight = window.innerHeight;
     const windowWidth = window.innerWidth
     const profileAreaHeightForTranslation = 204 / 2;
-    const textInput = WEBSITE_TEXT;
-    console.log(textInput.NAME)
     console.log(windowHeight)
 
 
@@ -34,10 +34,11 @@ const bgURL = './coolerTechWallpaperOpacity2.png';
         backgroundCOlor: '#1F2833',
         margin: '0%',
         overflow: 'hidden',
+        backgroundImage: `url(${circuitBgImage})`, backgroundRepeat: "repeat-y",
     }}>
         
         <div style={{
-             display: 'grid', justifyContent: 'center', alignItems: 'center', paddingTop: (windowHeight / 2), transform: 'translateY(-173px)', paddingBottom: (windowHeight / 2), backgroundImage: `url(${circuitBgImage})`, maxHeight: "1200px", backgroundSize: "cover", backgroundRepeat: "no-repeat"
+             display: 'grid', justifyContent: 'center', alignItems: 'center', paddingTop: ((windowHeight / 2) - 173),  paddingBottom: (windowHeight / 2),  overflow: 'hidden'
         }}>
                 <div className = "ProfileArea" style={{
                     color: '#66FCF1', maxWidth: '50vw', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
@@ -59,26 +60,62 @@ const bgURL = './coolerTechWallpaperOpacity2.png';
 
                 }}>
                 <button onClick={executeScroll} style={{
-                    backgroundColor: "transparent", color: "#66FCF1", border: "2px solid #66FCF1", fontSize: "20px", fontFamily: "Disket-Mono", maxWidth: "190px"
+                    backgroundColor: "transparent", color: "#66FCF1", border: "2px solid #66FCF1", fontSize: "20px", fontFamily: "Disket-Mono"
                 }}>
                     {WEBSITE_TEXT.PROJECT_BUTTON}</button>{''}
         </div>
         </div>
         <div ref={projectRef}  style={{
-            color: '#C5C6C7', marginLeft: '10vh'
+            color: '#C5C6C7', paddingLeft: '10vh', overflow: 'hidden'
         }}>
             <h1>Projects</h1>
-            <ul>
-                <li>
-                    Project 1
-                </li>
-                <li>
-                    Project 2
-                </li>
-            </ul>
+            <div>
+            <h2>{PROJECT_1_TEXT.TITLE}</h2>
+            <h3>{PROJECT_1_TEXT.TECH_USED}</h3>
+            <ul style={{listStyleType: "none"}}>
+                    <li>{PROJECT_1_TEXT.BULLET_POINT_1}</li>
+                    <li>{PROJECT_1_TEXT.BULLET_POINT_2} </li>
+                    <li>{PROJECT_1_TEXT.BULLET_POINT_3}</li>
+                    <li>{PROJECT_1_TEXT.BULLET_POINT_4}</li>
+              </ul>
+            </div>
+            <div>
+    <h2>{PROJECT_2_TEXT.TITLE}</h2>
+    <h3>{PROJECT_2_TEXT.TECH_USED}</h3>
+    <ul style={{listStyleType: "none"}}>
+            <li>{PROJECT_2_TEXT.BULLET_POINT_1}</li>
+            <li>{PROJECT_2_TEXT.BULLET_POINT_2} </li>
+            <li>{PROJECT_2_TEXT.BULLET_POINT_3}</li>
+        </ul>
+    </div>
+    <div>
+    <h2>{PROJECT_3_TEXT.TITLE}</h2>
+    <h3>{PROJECT_3_TEXT.TECH_USED}</h3>
+    <ul style={{listStyleType: "none"}}>
+            <li>{PROJECT_3_TEXT.BULLET_POINT_1}</li>
+            <li>{PROJECT_3_TEXT.BULLET_POINT_2} </li>
+            <li>{PROJECT_3_TEXT.BULLET_POINT_3}</li>
+            <li>{PROJECT_3_TEXT.BULLET_POINT_4}</li>
+            <li>{PROJECT_3_TEXT.BULLET_POINT_5}</li>
+        </ul>
+    </div>
         </div>
+           
     </div>
     );
 }
+
+/*
+<div>
+    <h2>{}</h2>
+    <h3>{}</h3>
+    <ul style={{listStyleType: "none"}}>
+            <li>{}</li>
+            <li>{} </li>
+            <li>{}</li>
+            <li>{}</li>
+        </ul>
+    </div>
+*/
 
 export default App;

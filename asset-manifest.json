@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/PortfolioWebsite/static/css/main.997fa724.chunk.css",
+    "main.js": "/PortfolioWebsite/static/js/main.4c20561e.chunk.js",
+    "main.js.map": "/PortfolioWebsite/static/js/main.4c20561e.chunk.js.map",
+    "runtime-main.js": "/PortfolioWebsite/static/js/runtime-main.cb0e4c7d.js",
+    "runtime-main.js.map": "/PortfolioWebsite/static/js/runtime-main.cb0e4c7d.js.map",
+    "static/js/2.a27d887a.chunk.js": "/PortfolioWebsite/static/js/2.a27d887a.chunk.js",
+    "static/js/2.a27d887a.chunk.js.map": "/PortfolioWebsite/static/js/2.a27d887a.chunk.js.map",
+    "index.html": "/PortfolioWebsite/index.html",
+    "precache-manifest.2b0c799603a21959c2d2320fa6a1a318.js": "/PortfolioWebsite/precache-manifest.2b0c799603a21959c2d2320fa6a1a318.js",
+    "service-worker.js": "/PortfolioWebsite/service-worker.js",
+    "static/css/main.997fa724.chunk.css.map": "/PortfolioWebsite/static/css/main.997fa724.chunk.css.map",
+    "static/js/2.a27d887a.chunk.js.LICENSE.txt": "/PortfolioWebsite/static/js/2.a27d887a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/PortfolioWebsite/static/media/KernelPanicNbp-LyG3.95c1e5e7.ttf",
+    "static/media/circuitBackground.png": "/PortfolioWebsite/static/media/circuitBackground.07dd5844.png",
+    "static/media/githubIcon.png": "/PortfolioWebsite/static/media/githubIcon.2e2fa794.png",
+    "static/media/linkedINIcon.png": "/PortfolioWebsite/static/media/linkedINIcon.0ac1a875.png",
+    "static/media/profilePicture.png": "/PortfolioWebsite/static/media/profilePicture.cc35f130.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb0e4c7d.js",
+    "static/js/2.a27d887a.chunk.js",
+    "static/css/main.997fa724.chunk.css",
+    "static/js/main.4c20561e.chunk.js"
+  ]
+}

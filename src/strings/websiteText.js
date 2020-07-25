@@ -20,7 +20,7 @@ const PROJECT_2_TEXT = {
     TECH_USED: "Android Studio, Java",
     BULLET_POINT_1: "Android app which calculates how many items the user can buy based on funds, item cost, and tax",
     BULLET_POINT_2: "Intuitive UI which spans across 3 views",
-    BULLET_POINT_3: "Published on Google Play Store (INSERT LINK HERE)",
+    BULLET_POINT_3: "Published on Google Play Store (Click Here)",
 
 }
 

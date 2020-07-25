@@ -1,5 +1,4 @@
 import React, {useRef} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import profilePicture from './images/profilePicture.png';
 import circuitBgImage from './images/circuitBackground.png'
@@ -24,18 +23,7 @@ function App() {
 const scrollToProjects = (ref) => window.scrollTo(0, ref.current.offsetTop);
 const projectRef = useRef(null)
 const executeScroll = () => scrollToProjects(projectRef)
-
-
-
-
-
-
-    
-
-    const windowHeight = window.innerHeight;
-    const windowWidth = window.innerWidth
-    const profileAreaHeightForTranslation = 204 / 2;
-    console.log(windowHeight)
+const windowHeight = window.innerHeight;
 
 
     return ( 

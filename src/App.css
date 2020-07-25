@@ -53,17 +53,6 @@
     max-height: 70px;
 }
 
-.ProfileArea::before {
-    background-image: url("./coolerTechWallpaperOpacity.png");
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.75;
-}
-
 .projectDiv {
     font-Family: "Honor";
     font-Size: "55px";
@@ -82,21 +71,9 @@
 }
 
 @font-face {
-    font-family: 'Mattone';
-    font-style: normal;
-    src: url('Fonts/Mattone-Regular.otf');
-}
-
-@font-face {
     font-family: 'Disket-Mono';
     font-style: normal;
     src: url('Fonts/Disket-Mono-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Corporate-Gothic';
-    font-style: normal;
-    src: url('Fonts/CorporateGothicNbpRegular-YJJ2.ttf')
 }
 
 @font-face {

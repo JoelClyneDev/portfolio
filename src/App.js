@@ -44,7 +44,7 @@ const windowHeight = window.innerHeight;
                     <p style={{fontFamily: 'Kernel-Panic', fontSize: "30px", marginBottom: "10px", color: "#C5C6C7"}}> {WEBSITE_TEXT.ABOUT_ME}</p> 
                 </div>
                 <div>
-                    <img className = "picture" src={profilePicture}></img>
+                    <img className = "picture" src={profilePicture} alt="Joel Clyne"></img>
                 </div>                    
             </div>
             <div style={{display: 'grid', alignItems: 'center', justifyContent: 'center', borderBottom: "2px solid #45A29E", paddingBottom: '20px'}}>
@@ -53,14 +53,14 @@ const windowHeight = window.innerHeight;
             </div>
             <div style={{display: 'flex', justifyContent: 'space-between', paddingTop: '10px'}}>
                 <a href='https://www.linkedin.com/in/joel-clyne/'>
-                <img className='icon' src={linkedInIcon} style={{paddingLeft: '40px'}}></img>
+                <img className='icon' src={linkedInIcon} style={{paddingLeft: '40px'}} alt='LinkedIn Icon'></img>
                 </a>
                 <div style={{display: 'grid', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}}>
                     <text style={{fontFamily: 'honor', fontSize: '25px', color: "#66FCF1"}}>Email</text>
                     <text style={{fontFamily: 'kernel-Panic', fontSize: '35px', color: "#C5C6C7"}}>joel.clyne2@gmail.com</text>
                 </div>
                 <a href='https://github.com/JoelClyneDev'>
-                <img className='icon' src={githubICon} style={{paddingRight: '40px'}}></img>
+                <img className='icon' src={githubICon} style={{paddingRight: '40px'}} alt='GitHub Icon'></img>
                 </a>
             </div>
         </div>

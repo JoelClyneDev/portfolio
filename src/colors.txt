@@ -3,3 +3,33 @@
 #C5C6C7 - light gray
 #66FCF1 - neon blue
 #45A29E - dark neon blue
+
+v2
+#61892f - military green
+#86C232 - lime green
+#222629 - black
+#474B4F - gray
+#6B6E70 - Light gray
+
+<div style={{
+            backgroundImage: `url(${circuitBgImage})`,
+            backgroundSize: "cover",
+            position: "absolute",
+            top: "0px",
+            right: "0px",
+            bottom: "0px",
+            left: "0px",
+            opacity: 0.75 
+        }}></div>
+        <div style={{
+            backgroundImage: `url(${circuitBgImage})`,
+            backgroundSize: "cover",
+            position: "absolute",
+            top: "936px",
+            right: "0px",
+            bottom: "1000px",
+            left: "0px",
+            opacity: 0.75,
+            minHeight: "500px",
+            overflow: 'hidden'
+        }}></div>

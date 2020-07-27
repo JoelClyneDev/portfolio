@@ -52,16 +52,12 @@ const windowHeight = window.innerHeight;
                     {WEBSITE_TEXT.PROJECT_BUTTON}</button>{''}
             </div>
             <div style={{display: 'flex', justifyContent: 'space-between', paddingTop: '10px'}}>
-                <a href='https://www.linkedin.com/in/joel-clyne/'>
-                <img className='icon' src={linkedInIcon} style={{paddingLeft: '40px'}} alt='LinkedIn Icon'></img>
-                </a>
+                <img className='icon' src={linkedInIcon} style={{paddingLeft: '40px'}} alt='LinkedIn Icon' onClick={() => window.open("https://www.linkedin.com/in/joel-clyne/", "_blank")}></img>
                 <div style={{display: 'grid', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}}>
                     <text style={{fontFamily: 'honor', fontSize: '25px', color: "#66FCF1"}}>Email</text>
                     <text style={{fontFamily: 'kernel-Panic', fontSize: '35px', color: "#C5C6C7"}}>joel.clyne2@gmail.com</text>
                 </div>
-                <a href='https://github.com/JoelClyneDev'>
-                <img className='icon' src={githubICon} style={{paddingRight: '40px'}} alt='GitHub Icon'></img>
-                </a>
+                <img className='icon' src={githubICon} style={{paddingRight: '40px'}} alt='GitHub Icon' onClick={() => window.open("https://github.com/JoelClyneDev/", "_blank")}></img>
             </div>
         </div>
         <div ref={projectRef} id='projects' style={{color: '#C5C6C7', paddingLeft: '10vh', overflow: 'hidden', maxWidth: '90vw'}}>
@@ -82,8 +78,8 @@ const windowHeight = window.innerHeight;
                 <ul className = "bodyText" style={{fontSize: '30px', color: "#C5C6C7"}}>
                     <li>{PROJECT_2_TEXT.BULLET_POINT_1}</li>
                     <li>{PROJECT_2_TEXT.BULLET_POINT_2} </li>
-                    <a href='https://play.google.com/store/apps/details?id=com.JCTechApps.ReversoBudgeter' style={{color: "#C5C6C7"}}>
-                    <li>{PROJECT_2_TEXT.BULLET_POINT_3}</li>
+                    <a href = "https://play.google.com/store/apps/details?id=com.JCTechApps.ReversoBudgeter" target = "_self">
+                    <li style={{color: "#C5C6C7"}}>{PROJECT_2_TEXT.BULLET_POINT_3}</li>
                     </a>
                 </ul>
             </div>

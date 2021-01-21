@@ -37,9 +37,9 @@ const PROJECT_3_TEXT = {
 const PROJECT_4_TEXT = {
         TITLE: "Nocturne-Magatamas",
         TECH_USED: "React, Node.js, MongoDB, Heroku",
-        BULLET_POINT_1: "Connected React frontend and Node.js server to display information scraped from 25 web pages",
+        BULLET_POINT_1: "Connected React frontend and Node.js server to display information scraped from 25 webpages",
         BULLET_POINT_2: "Employed MongoDB cluster to supply data to Node.js server",
-        BULLET_POINT_3: "Deployed with Heroku and registered with custom domain name to release website",
+        BULLET_POINT_3: "Deployed with Heroku and registered custom domain name to release website",
         BULLET_POINT_4: "www.smtmagatama.com",
     }
     /*

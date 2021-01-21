@@ -39,7 +39,7 @@ const PROJECT_4_TEXT = {
         TECH_USED: "React, Node.js, MongoDB, Heroku",
         BULLET_POINT_1: "Connected React frontend and Node.js server to display information scraped from 25 web pages",
         BULLET_POINT_2: "Employed MongoDB cluster to supply data to Node.js server",
-        BULLET_POINT_3: "Deployed with Heroku and registed with custom domain name to release website",
+        BULLET_POINT_3: "Deployed with Heroku and registered with custom domain name to release website",
         BULLET_POINT_4: "www.smtmagatama.com",
     }
     /*

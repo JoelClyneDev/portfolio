@@ -25,13 +25,22 @@ const PROJECT_2_TEXT = {
 }
 
 const PROJECT_3_TEXT = {
-        TITLE: "KC-Database Extractor ",
-        TECH_USED: "Java, SQLite, Jsoup",
-        BULLET_POINT_1: "Desktop app which generates a SQLite database of all 10,088 Yu-Gi-Oh! Trading Cards in 20 minutes",
-        BULLET_POINT_2: "Employs threading to increase performance by 500% ",
-        BULLET_POINT_3: "Scrapes data from the Official Yu-Gi-Oh! Database website and Yu-Gi-Oh! Wiki",
-        BULLET_POINT_4: "Contains all card information such as images, card text, and most recent release pack",
-        BULLET_POINT_5: "Simplistic UI for ease of use",
+    TITLE: "KC-Database Extractor ",
+    TECH_USED: "Java, SQLite, Jsoup",
+    BULLET_POINT_1: "Desktop app which generates a SQLite database of all 10,088 Yu-Gi-Oh! Trading Cards in 20 minutes",
+    BULLET_POINT_2: "Employs threading to increase performance by 500% ",
+    BULLET_POINT_3: "Scrapes data from the Official Yu-Gi-Oh! Database website and Yu-Gi-Oh! Wiki",
+    BULLET_POINT_4: "Contains all card information such as images, card text, and most recent release pack",
+    BULLET_POINT_5: "Simplistic UI for ease of use",
+}
+
+const PROJECT_4_TEXT = {
+        TITLE: "Nocturne-Magatamas",
+        TECH_USED: "React, Node.js, MongoDB, Heroku",
+        BULLET_POINT_1: "Connected React frontend and Node.js server to display information scraped from 25 web pages",
+        BULLET_POINT_2: "Employed MongoDB cluster to supply data to Node.js server",
+        BULLET_POINT_3: "Deployed with Heroku and registed with custom domain name to release website",
+        BULLET_POINT_4: "www.smtmagatama.com",
     }
     /*
     const PROJECT_X_TEXT = {
@@ -58,5 +67,6 @@ module.exports = {
     WEBSITE_TEXT: WEBSITE_TEXT,
     PROJECT_1_TEXT: PROJECT_1_TEXT,
     PROJECT_2_TEXT: PROJECT_2_TEXT,
-    PROJECT_3_TEXT: PROJECT_3_TEXT
+    PROJECT_3_TEXT: PROJECT_3_TEXT,
+    PROJECT_4_TEXT: PROJECT_4_TEXT
 }

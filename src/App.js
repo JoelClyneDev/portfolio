@@ -3,7 +3,7 @@ import './App.css';
 import profilePicture from './images/profilePicture.png';
 import circuitBgImage from './images/circuitBackground.png'
 import './strings/websiteText';
-import { PROJECT_1_TEXT, PROJECT_2_TEXT, PROJECT_3_TEXT, WEBSITE_TEXT } from './strings/websiteText';
+import { PROJECT_1_TEXT, PROJECT_2_TEXT, PROJECT_3_TEXT, PROJECT_4_TEXT, WEBSITE_TEXT } from './strings/websiteText';
 import linkedInIcon from './images/linkedINIcon.png'
 import githubICon from './images/githubIcon.png'
 
@@ -18,13 +18,40 @@ function App() {
 
 //for scrolling to an element stated in the ref
 
-
+console.log(PROJECT_4_TEXT.TITLE)
 
 const scrollToProjects = (ref) => window.scrollTo(0, ref.current.offsetTop);
 const projectRef = useRef(null)
 const executeScroll = () => scrollToProjects(projectRef)
 const windowHeight = window.innerHeight;
 
+
+
+const mainTitle = {
+    marginTop: '30px', 
+    marginBottom: '10px'
+}
+
+const subTitle = {
+    marginTop: '10px', 
+    marginBottom: '10px'
+}
+
+const bodyStyle = {
+    fontSize: '30px', 
+    color: "#C5C6C7"
+}
+
+const projectWithBorder = {
+    fontSize: '35px', 
+    color: '#45A29E', 
+    borderBottom: "2px solid #66FCF1"
+}
+
+const projectWithoutBorder = {
+    fontSize: '35px', 
+    color: '#45A29E'
+}
 
     return ( 
     <div style={{
@@ -62,7 +89,7 @@ const windowHeight = window.innerHeight;
         </div>
         <div ref={projectRef} id='projects' style={{color: '#C5C6C7', paddingLeft: '10vh', overflow: 'hidden', maxWidth: '90vw'}}>
             <h1 style={{fontFamily: "Disket-Mono", fontSize: "60px", color: '#66FCF1', marginBottom: '15px', paddingBottom: '15px', borderBottom: "2px solid #66FCF1"}}>Projects</h1>
-            <div className = "projectDiv" style={{fontSize: '35px', color: '#45A29E', borderBottom: "2px solid #66FCF1"}}>
+            <div className = "projectDiv" style={projectWithBorder}>
                 <h2 style={{marginTop: '0px', marginBottom: '10px'}}>{PROJECT_1_TEXT.TITLE}</h2>
                 <h3 style={{marginTop: '10px', marginBottom: '10px'}}>{PROJECT_1_TEXT.TECH_USED}</h3>
                 <ul className = "bodyText" style={{fontSize: '30px', color: "#C5C6C7",marginBottom: '10px', marginTop: '10px'}}>
@@ -72,10 +99,10 @@ const windowHeight = window.innerHeight;
                     <li>{PROJECT_1_TEXT.BULLET_POINT_4}</li>
                 </ul>
             </div>
-            <div className = "projectDiv" style={{fontSize: '35px', color: '#45A29E', borderBottom: "2px solid #66FCF1"}}>
-                <h2 style={{marginTop: '30px', marginBottom: '10px'}}>{PROJECT_2_TEXT.TITLE}</h2>
-                <h3 style={{marginTop: '10px', marginBottom: '10px'}}>{PROJECT_2_TEXT.TECH_USED}</h3>
-                <ul className = "bodyText" style={{fontSize: '30px', color: "#C5C6C7"}}>
+            <div className = "projectDiv" style={projectWithBorder}>
+                <h2 style={mainTitle}>{PROJECT_2_TEXT.TITLE}</h2>
+                <h3 style={subTitle}>{PROJECT_2_TEXT.TECH_USED}</h3>
+                <ul className = "bodyText" style={bodyStyle}>
                     <li>{PROJECT_2_TEXT.BULLET_POINT_1}</li>
                     <li>{PROJECT_2_TEXT.BULLET_POINT_2} </li>
                     <a href = "https://play.google.com/store/apps/details?id=com.JCTechApps.ReversoBudgeter" target = "_self">
@@ -83,15 +110,27 @@ const windowHeight = window.innerHeight;
                     </a>
                 </ul>
             </div>
-            <div className = "projectDiv" style={{fontSize: '35px', color: '#45A29E'}}>
-                <h2 style={{marginTop: '30px', marginBottom: '10px'}}>{PROJECT_3_TEXT.TITLE}</h2>
-                <h3 style={{marginTop: '10px', marginBottom: '10px'}}>{PROJECT_3_TEXT.TECH_USED}</h3>
-                <ul className = "bodyText" style={{fontSize: '30px', color: "#C5C6C7"}}>
+            <div className = "projectDiv" style={projectWithBorder}>
+                <h2 style={mainTitle}>{PROJECT_3_TEXT.TITLE}</h2>
+                <h3 style={subTitle}>{PROJECT_3_TEXT.TECH_USED}</h3>
+                <ul className = "bodyText" style={bodyStyle}>
                     <li>{PROJECT_3_TEXT.BULLET_POINT_1}</li>
                     <li>{PROJECT_3_TEXT.BULLET_POINT_2} </li>
                     <li>{PROJECT_3_TEXT.BULLET_POINT_3}</li>
                     <li>{PROJECT_3_TEXT.BULLET_POINT_4}</li>
                     <li>{PROJECT_3_TEXT.BULLET_POINT_5}</li>
+                </ul>
+            </div>
+            <div className = "projectDiv" style={projectWithoutBorder}>
+                <h2 style={mainTitle}>{PROJECT_4_TEXT.TITLE}</h2>
+                <h3 style={subTitle}>{PROJECT_4_TEXT.TECH_USED}</h3>
+                <ul className = "bodyText" style={bodyStyle}>
+                    <a href = "http://www.smtmagatama.com" target = "_self">
+                    <li style={{color: "#C5C6C7"}}>{PROJECT_4_TEXT.BULLET_POINT_4}</li>
+                    </a>
+                    <li>{PROJECT_4_TEXT.BULLET_POINT_1}</li>
+                    <li>{PROJECT_4_TEXT.BULLET_POINT_2} </li>
+                    <li>{PROJECT_4_TEXT.BULLET_POINT_3} </li>
                 </ul>
             </div>
         </div>    
